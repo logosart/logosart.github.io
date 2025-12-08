@@ -59,7 +59,7 @@ header h1 {
 
 .dark-mode header h1 {
   text-shadow: 0 0 8px var(--neon-color), 0 0 16px var(--neon-color);
-  color: var(--neon-color);
+
 }
 
 /* SEÇÕES */
