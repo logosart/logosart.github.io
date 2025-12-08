@@ -99,7 +99,6 @@ h2 {
   font-size: 0.95rem;
   transition: 0.3s ease;
 
-  /* AQUI — adiciona espaçamento */
   margin-top: 15px;
 }
 
@@ -112,13 +111,12 @@ h2 {
 
 
 
-/* aparecer animado */
 .card.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* micro animação no hover */
+
 .card:hover {
   transform: translateY(-5px) scale(1.01);
   box-shadow: 0 6px 20px var(--shadow);
@@ -139,13 +137,12 @@ ul li:last-child {
   border-bottom: none;
 }
 
-/* SEÇÃO DIFERENCIAIS */
 .diferenciais-list li {
   font-size: 1.05rem;
   padding: 10px 0;
 }
 
-/* SOBRE MIM MODERNO */
+
 .sobre-card {
   display: flex;
   align-items: center;
@@ -163,7 +160,7 @@ ul li:last-child {
   font-size: 1.05rem;
 }
 
-/* FOOTER */
+
 footer {
   background: var(--bg-card);
   padding: 25px;
@@ -172,7 +169,7 @@ footer {
   margin-top: 40px;
 }
 
-/* SOCIAL ICONS */
+
 .social-icons img {
   width: 26px;
   margin: 0 8px;
@@ -187,7 +184,7 @@ footer {
   transform: scale(1.15);
 }
 
-/* DARK MODE BUTTON */
+
 #darkModeBtn {
   position: fixed;
   bottom: 25px;
