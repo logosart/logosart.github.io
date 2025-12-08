@@ -1,20 +1,10 @@
-/* ------- DARK MODE ------- */
-const darkModeBtn = document.createElement("button");
-darkModeBtn.id = "darkModeBtn";
-darkModeBtn.innerHTML = "🌙";
-document.body.appendChild(darkModeBtn);
-
-darkModeBtn.addEventListener("click", () => {
+// alternar modo dark
+const btn = document.getElementById("darkModeBtn");
+btn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
-
-  if (document.body.classList.contains("dark-mode")) {
-    darkModeBtn.innerHTML = "☀️";
-  } else {
-    darkModeBtn.innerHTML = "🌙";
-  }
 });
 
-/* ------- ANIMAÇÃO DOS CARDS AO APARECER ------- */
+// animação de cards ao aparecer
 const cards = document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver(
@@ -25,10 +15,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.2 }
 );
 
 cards.forEach((card) => observer.observe(card));
-
-/* ------- ANIMAÇÃO DE SCROLL SUAVE (já nativa com CSS) ------- */
-/* Mas deixo JS caso queira personalizar futuramente */
