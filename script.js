@@ -1,5 +1,8 @@
 // alternar modo dark
-
+const btn = document.getElementById("darkModeBtn");
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
 
 // animação de cards ao aparecer
 const cards = document.querySelectorAll(".card");
@@ -17,10 +20,3 @@ const observer = new IntersectionObserver(
 
 cards.forEach((card) => observer.observe(card));
 
-const btn = document.getElementById("darkModeBtn");
-
-if (btn) {
-  btn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
-}
